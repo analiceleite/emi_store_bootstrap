@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="assets/Surf Shop.png" type="image/x-icon" />
+    <title>Emi Store</title>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <img
+            class="logo_img"
+            src="/assets/Surf Shop.png"
+            alt="Logo Surf Shop"
+          />
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="nav navbar-light">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre a loja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produto">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produtos">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div
+      id="carousel-loja"
+      class="carousel carousel-fade slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div data-bs-interval="3000" class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="./assets/loja/interior_carrosel.jpg"
+            alt="Interior da loja"
+          />
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./assets/loja/interior02_carrosel.jpg"
+            alt="Interior da loja"
+          />
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./assets/loja/cartoon_carrosel.jpg"
+            alt="Interior da loja"
+          />
+        </div>
+      </div>
+      <button
+        data-bs-target="#carousel-loja"
+        data-bs-slide="prev"
+        class="carousel-control-prev"
+        type="button"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel-loja"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel-loja"
+          class="active"
+          data-bs-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-loja"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel-loja"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+    </div>
+
+    <div class="container">
+      <main>
+        <section class="loja">
+          <article class="sobre_nos">
+            <img src="./assets/loja/surf-shop-02.jpg    " alt="foto da loja " />
+            <div class="text_sobre">
+              <h2>Sobre a Loja</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                eius reprehenderit eveniet ex modi sint ipsam totam mollitia
+                consequatur sequi voluptatum consequuntur sit veritatex modi
+                sint ipsam totam mollitia consequatur sequi voluptatum
+                consequuntur sit veritatex modi sint ipsam totam mollitia
+                consequatur sequi voluptatum consequuntur sit veritat
+              </p>
+            </div>
+          </article>
+          <div class="container-colecao">
+            <h2>Novidades</h2>
+            <div class="row">
+              <div class="col-4">
+                <article class="card">
+                  <header class="card-header">Vans Slip On</header>
+                  <img
+                    src="./assets/produto/tenis-vans-slip-on-classic-vitrine.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Essential Classic</h4>
+                    <p class="card-text">
+                      Lorem ipsum Lorem ipsum dolor sit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2022 às 19:00:00</time>
+                  </footer>
+                </article>
+              </div>
+              <div class="col-4">
+                <article class="card">
+                  <header class="card-header">Vans authentic black</header>
+                  <img
+                    src="./assets/produto/tenis-vans-authentic-preto-branco-vitrine.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Skateboarding</h4>
+                    <p class="card-text">
+                      Lorem ipsum Lorem ipsum dolor sit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2022 às 19:00:00</time>
+                  </footer>
+                </article>
+              </div>
+              <div class="col-4">
+                <article class="card">
+                  <header class="card-header">Vans sk8-high</header>
+                  <img
+                    src="./assets/produto/tenis-vans-authentic-preto-branco-vitrine.jpg"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Especial Edition</h4>
+                    <p class="card-text">
+                      Lorem ipsum Lorem ipsum dolor sit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                  </div>
+                  <footer class="card-footer">
+                    Postado em <time>10/08/2022 às 19:00:00</time>
+                  </footer>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <section id="produto">
+              <article>
+                <h2>Produtos</h2>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo-produto">
+                      <h3>KNU SLIP ON</h3>
+                      <img
+                        src="/assets/produto/knu_slip_on.PNG"
+                        alt="tênis Vans"
+                      />
+                      <br />
+                      <p><strong>Essential Black</strong></p>
+                      <p>R$ 469,99</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>KNU ULTRA WHITE</h3>
+                      <img
+                        src="/assets/produto/knu_slip_white.PNG"
+                        alt="tênis Vans"
+                      />
+                      <br />
+                      <p><strong>Essential White</strong></p>
+                      <p>R$ 360,00</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>SLIP ON CLASSIC</h3>
+                      <br />
+                      <img
+                        src="/assets/produto/vans_slip_on.png"
+                        alt="tênis Vans"
+                      />
+                      <p><strong>Essential Black</strong></p>
+                      <p>R$ 450,00</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>SLIP ON EXCLUSIVE</h3>
+                      <br />
+                      <img
+                        src="/assets/produto/slip_on_white.PNG"
+                        alt="tênis Vans"
+                      />
+                      <p><strong>Essential White</strong></p>
+                      <p>R$ 500,00</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>SLIP ON SAUCE</h3>
+                      <br />
+                      <img
+                        src="/assets/produto/slip_salce.PNG"
+                        alt="tênis Vans"
+                      />
+                      <p><strong>Exclusive Skate Design</strong></p>
+                      <p>R$ 699,99</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>SLIP ON VERDE</h3>
+                      <br />
+                      <img
+                        src="/assets/produto/slip_verde.PNG"
+                        alt="tênis Vans"
+                      />
+                      <p><strong>Essential Green</strong></p>
+                      <p>R$ 250,00</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>CLASSIC</h3>
+                      <br />
+                      <img
+                        src="/assets/produto/tenis_vans.PNG"
+                        alt="tênis Vans"
+                      />
+                      <p><strong>Essential Classic</strong></p>
+                      <p>R$ 350,00</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>SLIP ON CLASSIC</h3>
+                      <br />
+                      <img
+                        src="/assets/produto/vans_slip_on.png"
+                        alt="tênis Vans"
+                      />
+                      <p><strong>Essential Black</strong></p>
+                      <p>R$ 450,00</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+              <article>
+                <div class="tenis">
+                  <article>
+                    <div class="conteudo_produto">
+                      <h3>SK8 LOW</h3>
+                      <br />
+                      <img src="/assets/produto/sk8_low.png" alt="tênis Vans" />
+                      <p><strong>Exclusive Edition</strong></p>
+                      <p>R$ 499,99</p>
+                      <br />
+                      <button type="button">Adicionar ao carrinho</button>
+                    </div>
+                  </article>
+                </div>
+              </article>
+            </section>
+          </div>
+          <footer>
+            <div class="icones">
+              <p>&copy; Emi Store - Todos os direitos reservados - 2024</p>
+              <small>Desenvolvido por Analice Leite</small>
+              <ul class="container-flex">
+                <li>
+                  <img src="/assets/icones/facebook (2).png" alt="Facebook" />
+                </li>
+                <li>
+                  <img src="./assets/icones/instagram.png" alt="Instagram" />
+                </li>
+                <li>
+                  <img src="./assets/icones/youtube.png" alt="Youtube" />
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </section>
+      </main>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
