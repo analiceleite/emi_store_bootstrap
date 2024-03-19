@@ -41,18 +41,17 @@
                 <a class="nav-link" href="#">Sobre a loja</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#produto">Produtos</a>
+                <a class="nav-link" href="#novidades">Novidades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#produtos">Contato</a>
+                <a class="nav-link" href="#produtos">Produtos</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <div
-      id="carousel-loja"
+    <div id="carousel-loja"
       class="carousel carousel-fade slide"
       data-bs-ride="carousel"
     >
@@ -117,7 +116,7 @@
 
     <div class="container">
       <main>
-        <section class="loja">
+        <section class="loja" id="sobre">
           <article class="sobre_nos">
             <img src="./assets/loja/surf-shop-02.jpg    " alt="foto da loja " />
             <div class="text_sobre">
@@ -132,21 +131,18 @@
               </p>
             </div>
           </article>
-          <div class="container-colecao">
+          <div class="container-colecao" id="novidades">
             <h2>Novidades</h2>
             <div class="row">
               <div class="col-4">
                 <article class="card">
-                  <header class="card-header">Vans Slip On</header>
                   <img
                     src="./assets/produto/tenis-vans-slip-on-classic-vitrine.jpg"
                     alt=""
                   />
                   <div class="card-body">
                     <h4 class="card-title">Essential Classic</h4>
-                    <p class="card-text">
-                      Lorem ipsum Lorem ipsum dolor sit.
-                    </p>
+                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit.</p>
                     <a href="#" class="btn btn-primary">Leia mais</a>
                   </div>
                   <footer class="card-footer">
@@ -156,16 +152,13 @@
               </div>
               <div class="col-4">
                 <article class="card">
-                  <header class="card-header">Vans authentic black</header>
                   <img
                     src="./assets/produto/tenis-vans-authentic-preto-branco-vitrine.jpg"
                     alt=""
                   />
                   <div class="card-body">
                     <h4 class="card-title">Skateboarding</h4>
-                    <p class="card-text">
-                      Lorem ipsum Lorem ipsum dolor sit.
-                    </p>
+                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit.</p>
                     <a href="#" class="btn btn-primary">Leia mais</a>
                   </div>
                   <footer class="card-footer">
@@ -175,16 +168,13 @@
               </div>
               <div class="col-4">
                 <article class="card">
-                  <header class="card-header">Vans sk8-high</header>
                   <img
                     src="./assets/produto/tenis-vans-authentic-preto-branco-vitrine.jpg"
                     alt=""
                   />
                   <div class="card-body">
                     <h4 class="card-title">Especial Edition</h4>
-                    <p class="card-text">
-                      Lorem ipsum Lorem ipsum dolor sit.
-                    </p>
+                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit.</p>
                     <a href="#" class="btn btn-primary">Leia mais</a>
                   </div>
                   <footer class="card-footer">
@@ -196,7 +186,7 @@
           </div>
 
           <div class="container">
-            <section id="produto">
+            <section id="produtos">
               <article>
                 <h2>Produtos</h2>
                 <div class="tenis">
@@ -359,23 +349,33 @@
               </article>
             </section>
           </div>
-          <footer>
-            <div class="icones">
-              <p>&copy; Emi Store - Todos os direitos reservados - 2024</p>
-              <small>Desenvolvido por Analice Leite</small>
-              <ul class="container-flex">
-                <li>
-                  <img src="/assets/icones/facebook (2).png" alt="Facebook" />
-                </li>
-                <li>
-                  <img src="./assets/icones/instagram.png" alt="Instagram" />
-                </li>
-                <li>
-                  <img src="./assets/icones/youtube.png" alt="Youtube" />
-                </li>
-              </ul>
+
+          <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <h5>Informações</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec mauris faucibus, non eleifend enim malesuada.</p>
+                </div>
+                <div class="col-lg-4">
+                  <h5>Links Úteis</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#novidades">Novidades</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <h5>Contato</h5>
+                  <p>Email: analice.leite12@gmail.com</p>
+                  <p>Telefone: (47) 98495-7878</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center pt-3">
+              <p>&copy; 2024 Todos os direitos reservados.</p>
             </div>
           </footer>
+
         </section>
       </main>
     </div>

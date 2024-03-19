@@ -77,7 +77,8 @@ header .container {
 }
 
 header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   background-color: #fff;
@@ -184,9 +185,17 @@ header {
 
 /*Produtos*/
 
+#produtos {
+  display: grid;
+}
+
 
 .container-colecao h2 {
   margin-left: 40px;
+}
+
+.container-colecao img {
+  border-radius: 8px;
 }
 
 article {
@@ -307,6 +316,9 @@ footer li img {
     margin-right: 0;
     margin-bottom: 2%;
   }
+  .product {
+    width: 100%;
+ }
 }
 
 /* Estilos específicos para telas maiores que 641px e menores que 1024px */
