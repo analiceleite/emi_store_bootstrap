@@ -54,7 +54,7 @@ p {
 /* Container */
 
 .container h2 {
-  text-align: left;
+ margin-left: 22px;
   color: #2367ac;
   font-size: 36px;
   padding-bottom: 36px;
@@ -185,10 +185,6 @@ header {
 
 /*Produtos*/
 
-#produtos {
-  display: grid;
-}
-
 
 .container-colecao h2 {
   margin-left: 40px;
@@ -211,6 +207,12 @@ strong {
 
 /* Tenis - item */
 
+#produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+  width: 300px;
+}
+
 .tenis {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -226,8 +228,9 @@ strong {
 }
 
 .tenis img {
-  width: 350px;
-  height: 250px;
+  padding-right: 20px;
+  width: 250px;
+  height: 150px;
 }
 
 .tenis h3 {
@@ -248,7 +251,7 @@ strong {
 
 button {
   display: block;
-  width: 350px;
+  width: 220px;
   padding: 8px 0;
   border: none;
   background: rgb(72, 72, 172);
@@ -257,7 +260,6 @@ button {
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
-  align-items: center;
   margin-bottom: 32px;
 }
 
