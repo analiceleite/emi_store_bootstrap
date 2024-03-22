@@ -88,7 +88,8 @@ p {
 }
 
 .nav .nav-link,
-.navbar-brand{
+.navbar-brand,
+.navbar-brand:hover{
   color: #2367ac;
 }
 
@@ -100,13 +101,12 @@ p {
   background-color: #FFEAE6;
 }
 
-.section-title {
-  font-family: Pacifico, cursive;;
-}
+
 
 /*Sobre a loja*/
 
 footer {
+
   text-align: center;
   padding-bottom: 20px;
   margin-top: 30px;
