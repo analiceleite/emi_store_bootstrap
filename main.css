@@ -25,12 +25,7 @@ body {
   background-color: #ecf0f1;
 }
 
-h1,
-h2,
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
+
 
 p {
   font-family: "Roboto", sans-serif;
@@ -53,8 +48,24 @@ p {
 
 /* Container */
 
+
+.container-sobre img {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.container-sobre-texto {
+  padding-top: 50px;
+}
+
+.linha-texto {
+  height: 3px;
+}
+
 .container h2 {
- margin-left: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
   color: #2367ac;
   font-size: 36px;
   padding-bottom: 36px;
@@ -66,209 +77,34 @@ p {
   height: 80px;
 }
 
-/* Header */
-
-header .container {
-  background-color: white;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 1000;
-}
-
-/* Cards */
-
-.card-img-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .family-pic {
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: black;
-    height: 220px;
-  }
-
-
 /* Navbar */
-
-.navbar-nav .nav-link.active {
-  transition: font-size 0.3s;
-  color: #07111b;
-}
 
 .nav-link {
   text-align: center;
 }
 
-.navegation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 18px;
-  /* Altura da linha gradiente */
-  width: 100%;
-  transition: all 0.5s;
+.navbar {
+  background-color: #ebebeb;
 }
 
-.navegation ul {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
+.nav .nav-link,
+.navbar-brand{
+  color: #2367ac;
 }
 
-.navegation ul > li {
-  list-style: none;
+.navbar-brand {
+  font-family: Pacifico, cursive;
 }
 
-.navegation ul li a {
-  color: var(--cor-texto);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  text-decoration: solid;
-  transition: all 0.5s;
+.navbar-toggler {
+  background-color: #FFEAE6;
 }
 
-.navegation ul li a:hover {
-  color: #527bb0;
+.section-title {
+  font-family: Pacifico, cursive;;
 }
 
 /*Sobre a loja*/
-
-.loja {
-  width: 90%;
-  align-items: center;
-}
-
-.loja .sobre_nos {
-  display: flex;
-  font-size: 1.2em;
-  margin-top: 37px;
-}
-
-.loja .sobre_nos img {
-  border-radius: 4px;
-  max-width: 500px;
-  margin-right: 20px;
-  margin-bottom: 2%;
-}
-
-.sobre_nos .text_sobre h2 {
-  margin-bottom: 32px;
-}
-
-.sobre_nos .text_sobre p {
-  text-align: justify;
-  margin-top: 3%;
-  padding-bottom: 3%;
-}
-
-.text_sobre h2 {
-  /* padding-top: 10px; */
-  padding-bottom: 10px;
-  font-size: 36px;
-  text-decoration: none;
-  color: var(--cor-primaria);
-  border-bottom: 3px solid var(--cor-suave);
-  font-style: italic;
-}
-
-/*Produtos*/
-
-
-.container-colecao h2 {
-  margin-left: 40px;
-}
-
-.container-colecao img {
-  border-radius: 8px;
-}
-
-article {
-  display: inline-block;
-  margin: 35px;
-}
-
-article h3,
-p,
-strong {
-  padding-top: 8px;
-}
-
-/* Tenis - item */
-
-#produtos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
-  width: 300px;
-}
-
-.tenis {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  background-color: #ffffff;
-  border-radius: 16px;
-}
-
-.tenis:hover {
-  top: -4px;
-  box-shadow: 0 4px 4px #999;
-  transition: all 0.2s ease-in-out;
-}
-
-.tenis img {
-  padding-right: 20px;
-  width: 250px;
-  height: 150px;
-}
-
-.tenis h3 {
-  padding-bottom: 10px;
-  font-size: 36px;
-  text-decoration: none;
-  color: var(--cor-primaria);
-  border-bottom: 3px solid var(--cor-suave);
-  font-style: italic;
-}
-
-.tenis h3 {
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
-/* Buttons */
-
-button {
-  display: block;
-  width: 220px;
-  padding: 8px 0;
-  border: none;
-  background: rgb(72, 72, 172);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 32px;
-}
-
-button:hover {
-  background-color: var(--cor-destaque_hover);
-  color: var(--cor-secundaria);
-}
-
-/*Footer*/
 
 footer {
   text-align: center;
@@ -293,58 +129,5 @@ footer li img {
   justify-content: center;
 }
 
-/* Estilos específicos para telas até 640px */
-@media only screen and (max-width: 640px) {
-  .menu {
-    display: block;
-  }
 
-  .loja {
-    display: block;
-  }
 
-  .container {
-    max-width: 67%;
-  }
-
-  .loja .sobre_nos {
-    display: block;
-    font-size: 1em;
-    margin-top: 48px;
-  }
-
-  .loja .sobre_nos img {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 2%;
-  }
-  .product {
-    width: 100%;
- }
-}
-
-/* Estilos específicos para telas maiores que 641px e menores que 1024px */
-@media only screen and (min-width: 641px) and (max-width: 1023px) {
-  .container {
-    max-width: 90%;
-  }
-
-  .loja {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .loja .sobre_nos {
-    display: block;
-  }
-
-  .loja .sobre_nos a img {
-    max-width: 100%;
-  }
-
-  .loja .sobre_nos img {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 2%;
-  }
-}

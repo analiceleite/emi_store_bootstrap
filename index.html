@@ -1,384 +1,304 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fontface -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="shortcut icon" href="./assets/Surf Shop.png" type="image/x-icon" />
-    <title>Emi Store</title>
-  </head>
-  <body>
-    <header id="cabecalho">
-      <div class="navbar navbar-expand-lg">
-        <div class="container">
-          <img
-            class="logo_img"
-            src="./assets/Surf Shop.png"
-            alt="Logo Surf Shop"
-          />
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-            aria-controls="menu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <nav class="collapse navbar-collapse justify-content-end" id="menu">
-            <ul class="nav navbar-light">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre a loja</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#novidades">Novidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#produtos">Produtos</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div id="carousel-loja"
-      class="carousel carousel-fade slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div data-bs-interval="3000" class="carousel-item active">
-          <img
-            class="d-block w-100"
-            src="./assets/loja/interior_carrosel.jpg"
-            alt="Interior da loja"
-          />
-        </div>
-        <div data-bs-interval="3000" class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="./assets/loja/interior02_carrosel.jpg"
-            alt="Interior da loja"
-          />
-        </div>
-        <div data-bs-interval="3000" class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="./assets/loja/cartoon_carrosel.jpg"
-            alt="Interior da loja"
-          />
-        </div>
-      </div>
-      <button
-        data-bs-target="#carousel-loja"
-        data-bs-slide="prev"
-        class="carousel-control-prev"
-        type="button"
-      >
-        <span class="carousel-control-prev-icon"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fontface -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="shortcut icon" href="./assets/Surf Shop.png" type="image/x-icon" />
+  <title>Emi Store</title>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <div class="container">
+      <img class="logo_img" src="./assets/Surf Shop.png" alt="Logo Surf Shop" />
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carousel-loja"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carousel-loja"
-          class="active"
-          data-bs-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carousel-loja"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carousel-loja"
-          data-bs-slide-to="2"
-        ></button>
+      <nav class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="nav nav-pills d-block d-md-flex">
+          <li class="nav-item fw-bold">
+            <a href="#" class="nav-link">
+              Sobre a loja
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#novidades" class="nav-link">
+              Novidades
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#produtos" class="nav-link">
+              Produtos
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#contato" class="nav-link">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="carousel-loja" class="carousel carousel-fade slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div data-bs-interval="3000" class="carousel-item active">
+        <img class="d-block w-100" src="./assets/loja/interior_carrosel.jpg" alt="Interior da loja" />
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img class="d-block w-100" src="./assets/loja/interior02_carrosel.jpg" alt="Interior da loja" />
+      </div>
+      <div data-bs-interval="3000" class="carousel-item">
+        <img class="d-block w-100" src="./assets/loja/cartoon_carrosel.jpg" alt="Interior da loja" />
+      </div>
+    </div>
+    <button data-bs-target="#carousel-loja" data-bs-slide="prev" class="carousel-control-prev" type="button">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-loja" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel-loja" class="active" data-bs-slide-to="0"></button>
+      <button type="button" data-bs-target="#carousel-loja" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carousel-loja" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+  <main>
+    <div class="container container-sobre">
+      <div class="row">
+        <!-- Coluna para a imagem -->
+        <div class="col-md-6">
+          <img src="./assets/loja/surf-shop-02.jpg" alt="Foto da Loja" class="img-fluid rounded-img " />
+        </div>
+        <!-- Coluna para o texto -->
+        <div class="col-md-6">
+          <div class="container-sobre-texto">
+            <h2>Sobre a Loja</h2>
+            <hr class="linha-texto">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              eius reprehenderit eveniet ex modi sint ipsam totam mollitia
+              consequatur sequi voluptatum consequuntur sit veritatex modi sint ipsam totam mollitia
+              consequatur sequi voluptatum consequuntur sit veritatex modi sint ipsam totam mollitia
+              consequatur sequi voluptatum consequuntur sit veritat
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <main>
-        <section class="loja" id="sobre">
-          <article class="sobre_nos">
-            <img src="./assets/loja/surf-shop-02.jpg    " alt="foto da loja " />
-            <div class="text_sobre">
-              <h2>Sobre a Loja</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius reprehenderit eveniet ex modi sint ipsam totam mollitia
-                consequatur sequi voluptatum consequuntur sit veritatex modi
-                sint ipsam totam mollitia consequatur sequi voluptatum
-                consequuntur sit veritatex modi sint ipsam totam mollitia
-                consequatur sequi voluptatum consequuntur sit veritat
-              </p>
-            </div>
-          </article>
-          <div class="container-colecao" id="novidades">
-            <h2>Novidades</h2>
-            <div class="row">
-              <div class="col-4">
-                <article class="card">
-                  <img
-                    src="./assets/produto/tenis-vans-slip-on-classic-vitrine.jpg"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Essential Classic</h4>
-                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit.</p>
-                    <a href="#" class="btn btn-primary">Leia mais</a>
-                  </div>
-                  <footer class="card-footer">
-                    Postado em <time>10/08/2022 às 19:00:00</time>
-                  </footer>
-                </article>
+    <div class="container mt-5" id="novidades">
+      <h2 class="mb-4">Novidades</h1>
+        <div class="row">
+          <!-- Produto Vitrine -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <h5> SLIP ON ALTHENTIC</h5>
               </div>
-              <div class="col-4">
-                <article class="card">
-                  <img
-                    src="./assets/produto/tenis-vans-authentic-preto-branco-vitrine.jpg"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Skateboarding</h4>
-                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit.</p>
-                    <a href="#" class="btn btn-primary">Leia mais</a>
-                  </div>
-                  <footer class="card-footer">
-                    Postado em <time>10/08/2022 às 19:00:00</time>
-                  </footer>
-                </article>
+              <img src="./assets/produto/tenis-vans-slip-on-classic-vitrine.jpg" class="card-img-top"
+                alt="Produto Vitrine">
+              <div class="card-body">
+                <h5 class="card-title">Produto 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea repellat libero
+                  earum blanditiis quo explicabo</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
               </div>
-              <div class="col-4">
-                <article class="card">
-                  <img
-                    src="./assets/produto/tenis-vans-authentic-preto-branco-vitrine.jpg"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <h4 class="card-title">Especial Edition</h4>
-                    <p class="card-text">Lorem ipsum Lorem ipsum dolor sit.</p>
-                    <a href="#" class="btn btn-primary">Leia mais</a>
-                  </div>
-                  <footer class="card-footer">
-                    Postado em <time>10/08/2022 às 19:00:00</time>
-                  </footer>
-                </article>
+              <div class="card-footer">
+                <small class="text-muted">Postado em 10/07/2020 às 19:48:00</small>
               </div>
             </div>
           </div>
-          <br>
-          <div class="container">
-            <h2>Produtos</h2>
-            <section id="produtos">
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo-produto">
-                      <h3>KNU SLIP ON</h3>
-                      <img
-                        src="./assets/produto/knu_slip_on.PNG"
-                        alt="tênis Vans"
-                      />
-                      <br />
-                      <p><strong>Essential Black</strong></p>
-                      <p>R$ 469,99</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>KNU ULTRA WHITE</h3>
-                      <img
-                        src="./assets/produto/knu_slip_on.PNG"
-                        alt="tênis Vans"
-                      />
-                      <br />
-                      <p><strong>Essential White</strong></p>
-                      <p>R$ 360,00</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo-produto">
-                      <h3>KNU SLIP ON</h3>
-                      <img
-                        src="./assets/produto/knu_slip_on.PNG"
-                        alt="tênis Vans"
-                      />
-                      <br />
-                      <p><strong>Essential Black</strong></p>
-                      <p>R$ 469,99</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>SLIP ON EXCLUSIVE</h3>
-                      <br />
-                      <img
-                        src="./assets/produto/slip_on_white.PNG"
-                        alt="tênis Vans"
-                      />
-                      <p><strong>Essential White</strong></p>
-                      <p>R$ 500,00</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>SLIP ON SAUCE</h3>
-                      <br />
-                      <img
-                        src="./assets/produto/slip_salce.PNG"
-                        alt="tênis Vans"
-                      />
-                      <p><strong>Exclusive Skate Design</strong></p>
-                      <p>R$ 699,99</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>SLIP ON VERDE</h3>
-                      <br />
-                      <img
-                        src="./assets/produto/slip_verde.PNG"
-                        alt="tênis Vans"
-                      />
-                      <p><strong>Essential Green</strong></p>
-                      <p>R$ 250,00</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>CLASSIC</h3>
-                      <br />
-                      <img
-                        src="./assets/produto/tenis_vans.PNG"
-                        alt="tênis Vans"
-                      />
-                      <p><strong>Essential Classic</strong></p>
-                      <p>R$ 350,00</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>CLASSIC</h3>
-                      <br />
-                      <img
-                        src="./assets/produto/tenis_vans.PNG"
-                        alt="tênis Vans"
-                      />
-                      <p><strong>Essential Classic</strong></p>
-                      <p>R$ 350,00</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-              <article>
-                <div class="tenis">
-                  <article>
-                    <div class="conteudo_produto">
-                      <h3>SK8 LOW</h3>
-                      <br />
-                      <img src="./assets/produto/sk8_low.png" alt="tênis Vans" />
-                      <p><strong>Exclusive Edition</strong></p>
-                      <p>R$ 499,99</p>
-                      <br />
-                      <button type="button">Adicionar ao carrinho</button>
-                    </div>
-                  </article>
-                </div>
-              </article>
-            </section>
+          <!-- Produto Vitrine -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <h5> SLIP ON ALTHENTIC</h5>
+              </div>
+              <img src="./assets/produto/tenis-vans-slip-on-classic-vitrine.jpg" class="card-img-top"
+                alt="Produto Vitrine">
+              <div class="card-body">
+                <h5 class="card-title">Produto 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea repellat libero
+                  earum blanditiis quo explicabo</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Postado em 10/07/2020 às 19:48:00</small>
+              </div>
+            </div>
           </div>
+          <!-- Produto Vitrine -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <div class="card-header">
+                <h5> SLIP ON ALTHENTIC</h5>
+              </div>
+              <img src="./assets/produto/tenis-vans-slip-on-classic-vitrine.jpg" class="card-img-top"
+                alt="Produto Vitrine">
+              <div class="card-body">
+                <h5 class="card-title">Produto 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea repellat libero
+                  earum blanditiis quo explicabo</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Postado em 10/07/2020 às 19:48:00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
 
-          <footer class="bg-dark text-white text-center py-4">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4">
-                  <h5>Informações</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec mauris faucibus, non eleifend enim malesuada.</p>
-                </div>
-                <div class="col-lg-4">
-                  <h5>Links Úteis</h5>
-                  <ul class="list-unstyled">
-                    <li><a href="#novidades">Novidades</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                  </ul>
-                </div>
-                <div class="col-lg-4">
-                  <h5>Contato</h5>
-                  <p>Email: analice.leite12@gmail.com</p>
-                  <p>Telefone: (47) 98495-7878</p>
-                </div>
+    <br>
+    <div class="container mt-5" id="produtos">
+      <h2 class="mb-4">Produtos</h1>
+        <div class="row">
+          <!-- Produto 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/knu_slip_white.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP WHITE</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
               </div>
             </div>
-            <div class="text-center pt-3">
-              <p>&copy; 2024 Todos os direitos reservados.</p>
+          </div>
+          <!-- Produto 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/slip_salce.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">SK8 LOW</h5>
+                <p class="card-text">Essential Classic</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
             </div>
-          </footer>
+          </div>
+          <!-- Produto 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/slip_azul.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP BLUE</h5>
+                <p class="card-text">Essential Blue</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/slip_salce.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP COMFORT</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/slip_on_white.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">VANS ESSENTIAL</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/knu_slip_white.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP ON</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 7 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/sk8_low.png" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP ON</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 8 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/knu_slip_on.PNG" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP ON</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 9 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card">
+              <img src="./assets/produto/sk8_low.png" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                <h5 class="card-title">KNU SLIP ON</h5>
+                <p class="card-text">Essential Exclusive</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="bg-dark text-white text-center py-4" id="contato">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <h5>Informações</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec mauris faucibus,
+                  non eleifend enim malesuada.</p>
+              </div>
+              <div class="col-lg-4">
+                <h5>Links Úteis</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#novidades">Novidades</a></li>
+                  <li><a href="#produtos">Produtos</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4">
+                <h5>Contato</h5>
+                <p>Email: analice.leite12@gmail.com</p>
+                <p>Telefone: (47) 98495-7878</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-3">
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+          </div>
+        </footer>
 
         </section>
-      </main>
-    </div>
-    <script src="./lib/bootstrap.bundle.min.js"></script>
-  </body>
+  </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script
+</body>
+
 </html>
